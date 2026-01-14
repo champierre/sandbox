@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>XHTMLサンプルページ</title>
+  <style type="text/css">
+    body {
+      font-family: "Hiragino Sans", "Meiryo", sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.6;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+    main {
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      color: #333;
+      border-bottom: 2px solid #333;
+      padding-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #333;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      color: #666;
+    }
+    a {
+      color: #0066cc;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>XHTMLサンプルページ</h1>
+    <p>XHTML 1.0 Strict準拠のデモページ</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>XHTMLとは</h2>
+      <p>XHTML（Extensible HyperText Markup Language）は、HTMLをXMLの文法で再定義したマークアップ言語です。</p>
+    </section>
+
+    <section>
+      <h2>XHTMLの特徴</h2>
+      <ul>
+        <li>すべての要素は<strong>小文字</strong>で記述する</li>
+        <li>すべての要素は<em>閉じタグ</em>が必要</li>
+        <li>空要素は自己終了タグ（例: <code>&lt;br /&gt;</code>）を使用</li>
+        <li>属性値は必ず<code>"引用符"</code>で囲む</li>
+        <li>属性は省略形を使用できない</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>HTMLとXHTMLの比較</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>HTML</th>
+            <th>XHTML</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>文法の厳密さ</td>
+            <td>比較的緩やか</td>
+            <td>厳密（XML準拠）</td>
+          </tr>
+          <tr>
+            <td>大文字・小文字</td>
+            <td>区別しない</td>
+            <td>小文字のみ</td>
+          </tr>
+          <tr>
+            <td>閉じタグ</td>
+            <td>省略可能な場合あり</td>
+            <td>必須</td>
+          </tr>
+          <tr>
+            <td>属性値の引用符</td>
+            <td>省略可能な場合あり</td>
+            <td>必須</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>サンプルフォーム</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="name">お名前:</label><br />
+          <input type="text" id="name" name="name" />
+        </p>
+        <p>
+          <label for="email">メールアドレス:</label><br />
+          <input type="text" id="email" name="email" />
+        </p>
+        <p>
+          <label for="message">メッセージ:</label><br />
+          <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="送信" />
+        </p>
+      </form>
+    </section>
+
+    <section>
+      <h2>リンク</h2>
+      <p>詳しくは<a href="https://www.w3.org/TR/xhtml1/">W3C XHTML 1.0仕様書</a>をご参照ください。</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 XHTMLサンプルページ</p>
+  </footer>
+</body>
+</html>
